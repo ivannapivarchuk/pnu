@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tables</title>
+  <style>
+    /* Стилі для першої таблиці */
+    .table1 {
+      margin: 0 auto; /* Автоматичне центрування по горизонталі */
+      border: 5px solid darkorchid; /* Фіолетові контури для таблиці */
+      width: 40%;
+    }
+
+    .table1 td {
+      border: 1px solid darkorchid; /* Фіолетові контури для комірок */
+    }
+
+    .table1 tr td:first-child {
+      width: 150px;
+    }
+
+    .table1 tr:last-child td {
+      height: 150px;
+    }
+
+    /* Стилі для тексту після першої таблиці */
+    .text1 {
+      text-align: center;
+    }
+
+    /* Стилі для другої таблиці */
+    .table2 {
+      caption-side: bottom;
+      border-collapse: separate;
+      border-spacing: 20px;
+      width: 60%;
+      border: 2px solid green;
+    }
+
+    .table2 td {
+      padding: 0;
+      border: 2px solid green;
+    }
+
+    /* Стилі для третьої таблиці */
+    .table3 {
+      caption-side: bottom;
+      border-collapse: separate;
+      border-spacing: 20px;
+      width: 60%;
+      border: 2px solid orangered;
+    }
+
+    .table3 td {
+      padding: 0;
+    }
+
+    /* Стилі для контурів комірок */
+    .blue-border {
+      border: 2px solid blue; /* Синій колір контура для відповідних комірок */
+    }
+
+    .green-borderb {
+      border: 2px solid green; /* Зелений колір контура для відповідних комірок */
+    }
+    .orangered-border {
+      border: 2px solid orangered;
+    }
+    .table4 {
+      border-spacing: 0;
+      border: 1px solid green;
+      caption-side: bottom;
+    }
+
+    .table4 th,
+    .table4 td {
+      border: 1px solid green;
+      padding: 0.5em 0.5em;
+      width: 11em;
+    }
+
+    .table4 th:first-child {
+      color: blue;
+    }
+
+    .table4 td:last-child {
+      color: pink;
+    }
+    .table5 {
+      caption-side: bottom;
+      border-color: pink;
+      border-style: double;
+    }
+
+    .table5 td {
+      width: 12em;
+    }
+
+    .table5 tr:last-child {
+      background-color: rgb(0, 255, 0);
+      text-align: center;
+    }
+
+    .table5 tr:nth-child(2) td:nth-child(2) {
+      text-align: center;
+      background-color: lightgreen;
+    }
+    .table6 {
+
+      border-spacing: 1px;
+      border: 0.1px solid black; /* Чорний контур для всієї таблиці */
+      padding: 5px;
+    }
+    .table6 th, .table6 td {
+      border: 0.1px solid black; /* Білий контур для комірок */
+      padding: 10px;
+    }
+    .table7 {
+      margin: 0 auto;
+      caption-side: bottom;
+      border-spacing: 0;
+      border: 2px solid blue;
+    }
+    .table7 td {
+      height: 15px;
+      width: 170px;
+      /*border: 2px solid blue;*/
+      width: 100px;
+    }
+
+    .borderTop {
+      border-top: 1px solid blue;
+    }
+
+    .borderBottom {
+      border-bottom: 1px solid blue;
+    }
+
+    .borderRight {
+      border-right: 1px solid blue;
+    }
+
+    .borderLeft {
+      border-left: 1px solid blue;
+    }
+
+    .blue-cell {
+      background-color: lightblue;
+    }
+    .pink-cell {
+      background-color: hotpink;
+    }
+    .yellow-cell {
+      background-color: pink;
+
+    }
+    .table8 {
+      margin: 0 auto;
+      border: 2px solid powderblue;
+    }
+    .table8 td {
+      border: 2px solid powderblue;
+    }
+    .table8_1 {
+    caption-side: bottom;
+      border-spacing: 0;
+      border: 1px solid pink;
+    }
+    .table8_2 {
+      caption-side: bottom;
+      border-spacing: 0;
+      border: 1px solid rebeccapurple;
+    }
+    .table8_1 td {
+      border: 1px solid pink;
+    }
+    .table8_2 td {
+      border: 1px solid rebeccapurple;
+    }
+
+  </style>
+</head>
+<body>
+<!-- Перша таблиця -->
+<table class="table1">
+  <tr>
+    <th>Data 1</th>
+    <th>Data 2</th>
+    <th>Data 3</th>
+  </tr>
+  <tr>
+    <td colspan="1">data 3</td>
+    <td colspan="1">data 4</td>
+    <td colspan="1">data 5</td>
+  </tr>
+</table>
+
+<!-- Текст після першої таблиці -->
+<div class="text1">
+  <p>Table 1</p>
+</div>
+
+<!-- Друга таблиця -->
+<table class="table2">
+  <caption>Table 2</caption>
+  <tr>
+    <td>Data 1</td>
+    <td>Data 2</td>
+    <td>Data 3</td>
+  </tr>
+  <tr>
+    <td>data 4</td>
+    <td>data 5</td>
+    <td>data 6</td>
+  </tr>
+  <tr>
+    <td>data 7</td>
+    <td>data 8</td>
+    <td>data 9</td>
+  </tr>
+</table>
+
+
+<!-- Третя таблиця -->
+<table class="table3">
+  <caption>Table 3</caption>
+  <tr>
+    <td class="blue-border">Data 1</td>
+    <td class="orangered-border">Data 2</td>
+    <td class="orangered-border">Data 3</td>
+  </tr>
+  <tr>
+    <td class="orangered-border">data 4</td>
+    <td class="orangered-border">data 5</td>
+    <td class="green-borderb">Data 6</td>
+  </tr>
+  <table class="table4">
+    <caption>Table 4</caption>
+    <thead>
+    <tr>
+      <th>Data1</th>
+      <th>Data2</th>
+      <th>Data3</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Data4</td>
+      <td>Data5</td>
+      <td>Data6</td>
+    </tr>
+    </tbody>
+  </table>
+<table class="table5" rules="rows" frame="vsides">
+  <caption>Table 5</caption>
+  <tbody>
+  <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>8</td>
+    <td>9</td>
+  </tr>
+  </tbody>
+</table>
+<table class="table6">
+  <caption>Table 6</caption>
+  <tr>
+    <th rowspan="2">Sex</th>
+    <th>height</th>
+    <th>weight</th>
+    <th rowspan="2"> age</th>
+  </tr>
+  <tr>
+    <th colspan="2">average value</th>
+
+
+
+  </tr>
+  <tr>
+    <td>men</td>
+    <td>174</td>
+    <td>78</td>
+    <td>30</td>
+  </tr>
+  <tr>
+    <td>women</td>
+    <td>165</td>
+    <td>56</td>
+    <td>25</td>
+  </tr>
+</table>
+  <br>
+<table class="table7">
+  <caption> Table 7</caption>
+  <tr>
+    <td class="blue-cell borderBottom borderRight">Data</td>
+    <td colspan="2" class="borderBottom borderRight">Data </td>
+    <td class="borderLeft borderBottom">Data</td>
+  </tr>
+  <tr>
+    <td rowspan="2" class="borderBottom borderRight">Data </td>
+    <td rowspan="3" class="borderRight borderLeft borderTop">Data </td>
+    <td class="borderBottom borderLeft borderTop borderRight">Data</td>
+    <td class="borderTop borderLeft borderBottom">Data</td>
+  </tr>
+  <tr>
+    <td colspan="2" class="yellow-cell borderBottom borderTop borderLeft">Data</td>
+  </tr>
+  <tr>
+    <td class=" borderTop borderRight"></td>
+    <td class="borderRight borderLeft"></td>
+    <td class="pink-cell"></td>
+  </tr>
+</table>
+  <br>
+<table class="table8">
+  <caption> Table 8</caption>
+  <tr>
+    <td colspan="2">Data</td>
+    <td> Data</td>
+    <td colspan="2" >Data </td>
+  </tr>
+
+
+  <tr>
+  <td colspan="2" rowspan="3">
+    <table class="table8_1">
+    <tr>
+      <caption>Table8.1</caption>
+      <td>Data 1</td>
+      <td>Data 2</td>
+      <td>Data 3</td>
+    </tr>
+    <tr>
+      <td>Data 4</td>
+      <td>Data 5</td>
+      <td>Data 6</td>
+    </tr>
+  </table>
+  </td>
+  <td rowspan="3">Data</td>
+  <td colspan="2" rowspan="3">
+    <table class="table8_2">
+      <caption>Table8.2</caption>
+      <tr>
+        <td>Data 1</td>
+        <td>Data 2</td>
+        <td>Data 3</td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+
+</body>
+</html>
+
