@@ -1,0 +1,94 @@
+.position-container {
+    margin-bottom: 30px;
+  }
+
+  .position-box {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    position: relative;
+  }
+
+  .absolute-box {
+    background-color: red;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  .relative-box {
+    background-color: blue;
+    position: relative;
+    top: 50px;
+    left: 50px;
+  }
+
+  .fixed-box {
+    background-color: green;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+
+  /* Float and Clear Demo */
+  .float-container:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .float-box {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    margin: 10px;
+  }
+
+  /* z-index Demo */
+  .z-index-container {
+    margin-top: 30px;
+  }
+
+  .z-index-box {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    position: relative;
+  }
+
+  .box1 {
+    background-color: red;
+    z-index: 1;
+  }
+
+  .box2 {
+    background-color: blue;
+    z-index: 2;
+    left: 20px;
+    top: 20px;
+    position: absolute;
+  }
+
+  .box3 {
+    background-color: green;
+    z-index: 3;
+    left: 40px;
+    top: 40px;
+    position: absolute;
+  }
+
+  .left {
+    float: left;
+    background-color: #3366FF;
+}
+
+.right {
+    float: right;
+    background-color: #FF3366;
+}
+
+.fixed {
+    position: fixed;
+    background-color: #5733FF;
+}
