@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Веб-форма Демо</title>
+</head>
+<body>
+
+<form action="#" method="post">
+
+    <!-- Однорядкове текстове поле -->
+    <label for="single-line">Однорядкове текстове поле:</label>
+    <input type="text" id="single-line" name="single-line" required>
+
+    <br><br>
+
+    <!-- Багаторядкова текстова область -->
+    <label for="multi-line">Багаторядкова текстова область:</label>
+    <textarea id="multi-line" name="multi-line" rows="4" cols="50" required></textarea>
+
+    <br><br>
+
+    <!-- Поля для введення пароля та email -->
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" name="password" required>
+
+    <br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <br>
+
+    <!-- Поле вводу змінного діапазону -->
+    <label for="range">Діапазон:</label>
+    <input type="range" id="range" name="range" min="0" max="100">
+
+    <br><br>
+
+    <!-- Перемикач єдиного вибору -->
+    <fieldset>
+        <legend>Перемикач єдиного вибору:</legend>
+        <label for="option1"><input type="radio" id="option1" name="radio-group" value="option1" checked> Варіант 1</label>
+        <label for="option2"><input type="radio" id="option2" name="radio-group" value="option2"> Варіант 2</label>
+    </fieldset>
+
+    <br><br>
+
+    <!-- Прапорці для множинного вибору -->
+    <label>Множинний вибір:</label>
+    <label for="option3"><input type="checkbox" id="option3" name="checkbox-group[]" value="option3"> Варіант 3</label>
+    <label for="option4"><input type="checkbox" id="option4" name="checkbox-group[]" value="option4"> Варіант 4</label>
+
+    <br><br>
+
+    <!-- Випадаючий список -->
+    <label for="dropdown">Виберіть опцію:</label>
+    <select id="dropdown" name="dropdown">
+        <optgroup label="Група 1">
+            <option value="option5">Опція 5</option>
+            <option value="option6">Опція 6</option>
+        </optgroup>
+        <optgroup label="Група 2">
+            <option value="option7">Опція 7</option>
+            <option value="option8">Опція 8</option>
+        </optgroup>
+    </select>
+
+    <br><br>
+
+    <!-- Список множинного вибору -->
+    <label for="multi-select">Оберіть декілька варіантів:</label>
+    <select id="multi-select" name="multi-select" multiple>
+        <option value="option9">Опція 9</option>
+        <option value="option10">Опція 10</option>
+        <option value="option11">Опція 11</option>
+    </select>
+
+    <br><br>
+
+    <!-- Кнопка скидання форми -->
+    <input type="reset" value="Очистити форму">
+
+    <br><br>
+
+    <!-- Кнопка з обробником події -->
+    <input type="button" value="Click me!" onClick='alert("Oh, you have clicked me!!!")'>
+
+</form>
+
+<style>
+    /* Стилі для демонстрації псевдокласів */
+    :first-child {
+        color: red;
+    }
+
+    :nth-of-type(2) {
+        font-weight: bold;
+    }
+
+    :checked {
+        background-color: lightgreen;
+    }
+</style>
+
+</body>
+</html>
